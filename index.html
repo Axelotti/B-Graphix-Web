@@ -1,749 +1,736 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BGraphix Church Store</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet"/>
-  <link rel="icon" type="image/png" href="B Graphix Logo.png"/>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="description" content="BGraphix Church Store — custom personalized apparel, gifts, and keepsakes for your church, district events, and special occasions. Located in Brownsville, TX." />
+  <meta name="keywords" content="church store, personalized gifts, custom apparel, BGraphix, Brownsville Texas, iglesia" />
+  <meta property="og:title" content="BGraphix Church Store" />
+  <meta property="og:description" content="Custom personalized keepsakes, apparel, and gifts for faith communities." />
+  <meta property="og:image" content="B Graphix Logo.png" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#1B4F7A" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="B Graphix Logo.png" />
+  <link rel="icon" type="image/png" href="B Graphix Logo.png" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<!-- NAV -->
-<nav>
-  <div class="nav-logo">BGraphix <span>Store</span></div>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#" class="active" onclick="showPage('home',this)" data-i18n="nav-home">Home</a></li>
-    <li><a href="#" id="navStore" onclick="showPage('store',this)" data-i18n="nav-store">Store</a></li>
-    <li><a href="#" onclick="showPage('contact',this)" data-i18n="nav-contact">Contact</a></li>
-  </ul>
-  <div class="lang-toggle">
-    <button class="lang-btn active" id="btnEn" onclick="setLanguage('en')">EN</button>
-    <span class="lang-sep">|</span>
-    <button class="lang-btn" id="btnEs" onclick="setLanguage('es')">ES</button>
-  </div>
-  <div class="hamburger" onclick="toggleNav()">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
-
-<!-- ══════════════════════ HOME ══════════════════════ -->
-<div class="page active" id="home">
-  <section class="hero">
-    <div class="cross-icon" id="heroLogo">
-      <img src="B Graphix Logo.png" alt="BGraphix Logo" id="logoImg"
-        style="height:150px;object-fit:contain;display:block;filter:drop-shadow(0 0 20px rgba(201,168,76,0.6));" />
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">BGraphix <span>Store</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" class="active" onclick="showPage('home',this)" data-i18n="nav-home">Home</a></li>
+      <li><a href="#" id="navStore" onclick="showPage('store',this)" data-i18n="nav-store">Store</a></li>
+      <li><a href="#" onclick="showPage('contact',this)" data-i18n="nav-contact">Contact</a></li>
+      <li><a href="#" onclick="showPage('design-upload',this)" data-i18n="nav-design-upload">Design Upload</a></li>
+    </ul>
+    <div class="lang-toggle">
+      <button class="lang-btn active" id="btnEs" onclick="setLanguage('es')">ES</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" id="btnEn" onclick="setLanguage('en')">EN</button>
     </div>
-    <p class="hero-subtitle" data-i18n="hero-subtitle">Nuestra Historia y Misión</p>
-    <h1 data-i18n="hero-h1">Paz De <em>Dios</em></h1>
-    <div class="hero-desc" data-i18n="hero-desc">
-      <p>La Iglesia Evangelica Cristiana Espiritual ubicada en 207 Gilson Rd Brownsville Texas. Con la finalidad de recaudar fondos para los proyectos futuros de construccion como sea Casa Pastoral o mejoras en el Templo, Cocina y Salon de Actos. Iniciando este proyecto desde el 2018 para realizar trabajos de Serigrafia para suplir la necesidad de los regalos para Delegados de Fiestas de Distrito, Sociedades Femeniles, Juveniles e Infantiles, Dia de las Madres, Dia del Padre o algun evento especial donde la finalidad es obsequiar un recuerdo PERSONALIZADO donde la calidad de un buen trabajo es nuestra prioridad, asi mismo el uso de los mejores productos en el mercado para suplir su orden. De antemano Dios les pague por su decision de odenar y ser parte de este proyecto con el entendimiento que su cooperacion es 100% para la obra de Dios.</p>
-      <p style="margin-top:1rem;">Esperamos de su comprension en los precios ya que somos un taller pequeño y no contamos con un gran inventario. Los productos se consiguen al recivir su orden.</p>
-      <p style="margin-top:1rem;color:var(--gold);font-weight:600;">Dios les pague.</p>
+    <div class="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
     </div>
+  </nav>
 
-  </section>
+  <!-- ══════════════════════ HOME ══════════════════════ -->
+  <div class="page active" id="home">
+    <section class="hero">
+      <div class="cross-icon" id="heroLogo">
+        <img src="B Graphix Logo.png" alt="BGraphix Logo" id="logoImg" class="hero-logo-img" />
+      </div>
+      <p class="hero-subtitle" data-i18n="hero-subtitle">Nuestra Historia y Misión</p>
+      <h1 data-i18n="hero-h1">Paz De <em>Dios</em></h1>
+      <div class="hero-desc" data-i18n="hero-desc">
+        <p>La Iglesia Evangelica Cristiana Espiritual ubicada en 207 Gilson Rd Brownsville Texas. Con la finalidad de
+          recaudar fondos para los proyectos futuros de construccion como sea Casa Pastoral o mejoras en el Templo,
+          Cocina y Salon de Actos. Iniciando este proyecto desde el 2018 para realizar trabajos de Serigrafia para
+          suplir la necesidad de los regalos para Delegados de Fiestas de Distrito, Sociedades Femeniles, Juveniles e
+          Infantiles, Dia de las Madres, Dia del Padre o algun evento especial donde la finalidad es obsequiar un
+          recuerdo PERSONALIZADO donde la calidad de un buen trabajo es nuestra prioridad, asi mismo el uso de los
+          mejores productos en el mercado para suplir su orden. De antemano Dios les pague por su decision de odenar y
+          ser parte de este proyecto con el entendimiento que su cooperacion es 100% para la obra de Dios.</p>
+        <p style="margin-top:1rem;">Esperamos de su comprension en los precios ya que somos un taller pequeño y no
+          contamos con un gran inventario. Los productos se consiguen al recivir su orden.</p>
+        <p style="margin-top:1rem;color:var(--gold);font-weight:600;">Dios les pague.</p>
+      </div>
 
-  <section class="featured-strip">
-    <p class="section-label" data-i18n="feat-label">What We Offer</p>
-    <h2 class="section-title" data-i18n="feat-title">Faith Resources & Community</h2>
-    <div class="featured-grid">
-      <div class="feat-card">
-        <div class="feat-icon">📖</div>
-        <h3 data-i18n="feat1-title">Books & Bibles</h3>
-        <p data-i18n="feat1-desc">Curated selections to deepen your faith and grow in scripture.</p>
-      </div>
-      <div class="feat-card">
-        <div class="feat-icon">👕</div>
-        <h3 data-i18n="feat3-title">Apparel</h3>
-        <p data-i18n="feat3-desc">Wear your faith with our church-branded clothing and accessories.</p>
-      </div>
-      <div class="feat-card">
-        <div class="feat-icon">🎁</div>
-        <h3 data-i18n="feat4-title">Gifts & Decor</h3>
-        <p data-i18n="feat4-desc">Meaningful gifts for every occasion, rooted in faith and love.</p>
-      </div>
-      <div class="feat-card">
-        <div class="feat-icon">✨</div>
-        <h3 data-i18n="feat2-title">& More</h3>
-        <p data-i18n="feat2-desc">Personalized items, custom orders, and special keepsakes for every occasion.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <div class="logo">BGraphix</div>
-    <p style="margin-top:0.5rem;" data-i18n="footer-copy">© 2025 BGraphix. All rights reserved.</p>
-  </footer>
-</div>
+    <section class="featured-strip">
+      <p class="section-label" data-i18n="feat-label">What We Offer</p>
+      <h2 class="section-title" data-i18n="feat-title">Faith Resources & Community</h2>
+      <div class="featured-grid">
+        <div class="feat-card">
+          <div class="feat-icon">📖</div>
+          <h3 data-i18n="feat1-title">Books & Bibles</h3>
+          <p data-i18n="feat1-desc">Curated selections to deepen your faith and grow in scripture.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">👕</div>
+          <h3 data-i18n="feat3-title">Apparel</h3>
+          <p data-i18n="feat3-desc">Wear your faith with our church-branded clothing and accessories.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">🎁</div>
+          <h3 data-i18n="feat4-title">Gifts & Decor</h3>
+          <p data-i18n="feat4-desc">Meaningful gifts for every occasion, rooted in faith and love.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">✨</div>
+          <h3 data-i18n="feat2-title">& More</h3>
+          <p data-i18n="feat2-desc">Personalized items, custom orders, and special keepsakes for every occasion.</p>
+        </div>
+      </div>
+    </section>
 
-<!-- ══════════════════════ STORE ══════════════════════ -->
-<div class="page" id="store">
-  <div class="store-hero">
-    <p class="section-label" data-i18n="store-label">Our Store</p>
-    <h1 data-i18n="store-h1">We Specialize in <em>Personalizing</em> Your Keepsakes</h1>
-    <p data-i18n="store-desc">Custom apparel, gifts, and more — crafted with quality and faith.</p>
+    <footer>
+      <div class="logo">BGraphix</div>
+      <p class="footer-copy" data-i18n="footer-copy">© 2025 BGraphix. All rights reserved.</p>
+    </footer>
   </div>
 
-  <div class="store-body">
-    <div class="category-tabs">
-      <button class="tab active" onclick="filterProducts('all', this)" data-i18n="tab-all">All Items</button>
-      <button class="tab" onclick="filterProducts('apparel', this)" data-i18n="tab-apparel">Apparel</button>
-      <button class="tab" onclick="filterProducts('accessories', this)" data-i18n="tab-accessories">Accessories</button>
-      <button class="tab" onclick="filterProducts('gifts', this)" data-i18n="tab-gifts">Gifts</button>
+  <!-- ══════════════════════ STORE ══════════════════════ -->
+  <div class="page" id="store">
+    <div class="store-hero">
+      <p class="section-label" data-i18n="store-label">Our Store</p>
+      <h1 data-i18n="store-h1">We Specialize in <em>Personalizing</em> Your Keepsakes</h1>
+      <p data-i18n="store-desc">Custom apparel, gifts, and more — crafted with quality and faith.</p>
     </div>
-    <div class="products-grid" id="productsGrid"></div>
+
+    <div class="store-body">
+      <div class="category-tabs">
+        <button class="tab active" onclick="filterProducts('all', this)" data-i18n="tab-all">All Items</button>
+        <button class="tab" onclick="filterProducts('apparel', this)" data-i18n="tab-apparel">Apparel</button>
+        <button class="tab" onclick="filterProducts('accessories', this)"
+          data-i18n="tab-accessories">Accessories</button>
+        <button class="tab" onclick="filterProducts('gifts', this)" data-i18n="tab-gifts">Gifts</button>
+      </div>
+      <div class="products-grid" id="productsGrid"></div>
+    </div>
+
+    <footer>
+      <div class="logo">BGraphix</div>
+      <p class="footer-copy" data-i18n="footer-copy">© 2025 BGraphix. All rights reserved.</p>
+    </footer>
   </div>
 
-  <footer>
-    <div class="logo">BGraphix</div>
-    <p style="margin-top:0.5rem;" data-i18n="footer-copy">© 2025 BGraphix. All rights reserved.</p>
-  </footer>
-</div>
+  <!-- ══════════════════════ CONTACT ══════════════════════ -->
+  <div class="page" id="contact">
 
-<!-- ══════════════════════ CONTACT ══════════════════════ -->
-<div class="page" id="contact">
+    <div class="store-contact-hero">
+      <p class="section-label" data-i18n="contact-label">Store Support</p>
+      <h1 data-i18n="contact-h1">Contact Our Store Team</h1>
+      <p data-i18n="contact-desc">Questions about an order, product availability, or custom requests? We're here to
+        help.</p>
+    </div>
 
-  <div class="store-contact-hero">
-    <p class="section-label" data-i18n="contact-label">Store Support</p>
-    <h1 data-i18n="contact-h1">Contact Our Store Team</h1>
-    <p data-i18n="contact-desc">Questions about an order, product availability, or custom requests? We're here to help.</p>
-  </div>
+    <div class="store-contact-body">
 
-  <div class="store-contact-body">
+      <div class="store-contact-layout">
 
-    <div class="store-contact-layout">
+        <!-- Contact Form -->
+        <div class="form-panel">
+          <h3 data-i18n="form-title">Send Us a Message</h3>
+          <p class="form-sub" data-i18n="form-sub">Fill out the form below and our store team will get back to you
+            within 1–2 business days.</p>
 
-      <!-- Contact Form -->
-      <div class="form-panel">
-        <h3 data-i18n="form-title">Send Us a Message</h3>
-        <p class="form-sub" data-i18n="form-sub">Fill out the form below and our store team will get back to you within 1–2 business days.</p>
-
-        <div id="storeContactForm">
-          <div class="form-row">
-            <div class="form-group">
-              <label data-i18n="label-first">First Name <span class="req">*</span></label>
-              <input type="text" placeholder="John" id="fcFirst" data-i18n-placeholder="ph-first" />
+          <div id="storeContactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label data-i18n="label-first">First Name <span class="req">*</span></label>
+                <input type="text" placeholder="John" id="fcFirst" data-i18n-placeholder="ph-first" />
+              </div>
+              <div class="form-group">
+                <label data-i18n="label-last">Last Name <span class="req">*</span></label>
+                <input type="text" placeholder="Doe" id="fcLast" data-i18n-placeholder="ph-last" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label data-i18n="label-sector">Sector <span class="req">*</span></label>
+                <input type="number" placeholder="e.g. 12" id="fcSector" min="0" data-i18n-placeholder="ph-sector" />
+              </div>
+              <div class="form-group">
+                <label data-i18n="label-distrito">Distrito <span class="req">*</span></label>
+                <input type="number" placeholder="e.g. 5" id="fcDistrito" min="0" data-i18n-placeholder="ph-distrito" />
+              </div>
             </div>
             <div class="form-group">
-              <label data-i18n="label-last">Last Name <span class="req">*</span></label>
-              <input type="text" placeholder="Doe" id="fcLast" data-i18n-placeholder="ph-last" />
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label data-i18n="label-sector">Sector <span class="req">*</span></label>
-              <input type="number" placeholder="e.g. 12" id="fcSector" min="0" data-i18n-placeholder="ph-sector" />
+              <label data-i18n="label-email">Email Address <span class="req">*</span></label>
+              <input type="email" placeholder="john@example.com" id="fcEmail" />
             </div>
             <div class="form-group">
-              <label data-i18n="label-distrito">Distrito <span class="req">*</span></label>
-              <input type="number" placeholder="e.g. 5" id="fcDistrito" min="0" data-i18n-placeholder="ph-distrito" />
+              <label data-i18n="label-phone">Phone Number <span class="req">*</span></label>
+              <input type="tel" placeholder="(000) 000-0000" id="fcPhone" />
             </div>
+            <div class="form-group">
+              <label data-i18n="label-inquiry">Inquiry Type <span class="req">*</span></label>
+              <select id="fcType">
+                <option value="" data-i18n="select-default">Select a topic...</option>
+                <option data-i18n="select-opt1">Order Status / Tracking</option>
+                <option data-i18n="select-opt2">Return or Exchange</option>
+                <option data-i18n="select-opt3">Product Availability</option>
+                <option data-i18n="select-opt4">Custom / Bulk Order</option>
+                <option data-i18n="select-opt5">Wholesale Inquiry</option>
+                <option data-i18n="select-opt6">Website Issue</option>
+                <option data-i18n="select-opt7">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label data-i18n="label-order">Order Number (if applicable)</label>
+              <input type="text" placeholder="e.g. BG-10042" id="fcOrder" data-i18n-placeholder="ph-order" />
+            </div>
+            <div class="form-group">
+              <label data-i18n="label-message">Message <span class="req">*</span></label>
+              <textarea placeholder="Tell us how we can help you..." id="fcMessage"
+                data-i18n-placeholder="ph-message"></textarea>
+            </div>
+            <button class="submit-btn" onclick="submitStoreForm()" data-i18n="btn-send">Send Message ✉</button>
           </div>
-          <div class="form-group">
-            <label data-i18n="label-email">Email Address <span class="req">*</span></label>
-            <input type="email" placeholder="john@example.com" id="fcEmail" />
+
+          <div class="form-success" id="storeFormSuccess">
+            <div class="success-icon">✅</div>
+            <h4 data-i18n="success-title">Message Sent!</h4>
+            <p data-i18n="success-msg">Thank you for reaching out. Our store team will reply to your email within 1–2
+              business days. We appreciate your patience and your support of our ministry.</p>
           </div>
-          <div class="form-group">
-            <label data-i18n="label-phone">Phone Number <span class="req">*</span></label>
-            <input type="tel" placeholder="(000) 000-0000" id="fcPhone" />
-          </div>
-          <div class="form-group">
-            <label data-i18n="label-inquiry">Inquiry Type <span class="req">*</span></label>
-            <select id="fcType">
-              <option value="" data-i18n="select-default">Select a topic...</option>
-              <option data-i18n="select-opt1">Order Status / Tracking</option>
-              <option data-i18n="select-opt2">Return or Exchange</option>
-              <option data-i18n="select-opt3">Product Availability</option>
-              <option data-i18n="select-opt4">Custom / Bulk Order</option>
-              <option data-i18n="select-opt5">Wholesale Inquiry</option>
-              <option data-i18n="select-opt6">Website Issue</option>
-              <option data-i18n="select-opt7">Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label data-i18n="label-order">Order Number (if applicable)</label>
-            <input type="text" placeholder="e.g. BG-10042" id="fcOrder" data-i18n-placeholder="ph-order" />
-          </div>
-          <div class="form-group">
-            <label data-i18n="label-message">Message <span class="req">*</span></label>
-            <textarea placeholder="Tell us how we can help you..." id="fcMessage" data-i18n-placeholder="ph-message"></textarea>
-          </div>
-          <button class="submit-btn" onclick="submitStoreForm()" data-i18n="btn-send">Send Message ✉</button>
         </div>
 
-        <div class="form-success" id="storeFormSuccess">
-          <div class="success-icon">✅</div>
-          <h4 data-i18n="success-title">Message Sent!</h4>
-          <p data-i18n="success-msg">Thank you for reaching out. Our store team will reply to your email within 1–2 business days. We appreciate your patience and your support of our ministry.</p>
+        <!-- Store Info -->
+        <div class="store-info-panel">
+
+          <div class="store-info-card">
+            <div class="store-info-icon">📦</div>
+            <div class="store-info-text">
+              <h4 data-i18n="info-location-title">Store Location</h4>
+              <p data-i18n="info-location-text">207 Gilson Rd<br>Brownsville, TX</p>
+            </div>
+          </div>
+
+          <div class="store-info-card">
+            <div class="store-info-icon">📧</div>
+            <div class="store-info-text">
+              <h4 data-i18n="info-email-title">Store Email</h4>
+              <p><a href="mailto:info@bgraphix.store">info@bgraphix.store</a><br>
+                <span class="info-email-sub" data-i18n="info-email-sub">Replies within 1–2
+                  business days</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="store-info-card">
+            <div class="store-info-icon">🚚</div>
+            <div class="store-info-text">
+              <h4 data-i18n="info-shipping-title">Shipping</h4>
+              <p data-i18n="info-shipping-text">Ships once your order is complete. Standard shipping 5–7 business days.
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <!-- Store Info -->
-      <div class="store-info-panel">
+    </div>
 
-        <div class="store-info-card">
-          <div class="store-info-icon">📦</div>
-          <div class="store-info-text">
-            <h4 data-i18n="info-location-title">Store Location</h4>
-            <p data-i18n="info-location-text">207 Gilson Rd<br>Brownsville, TX</p>
-          </div>
+    <footer>
+      <div class="logo">BGraphix</div>
+      <p class="footer-copy" data-i18n="footer-copy">© 2025 BGraphix. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- ══════════════════════ DESIGN UPLOAD ══════════════════════ -->
+  <div class="page" id="design-upload">
+
+    <div class="store-contact-hero">
+      <p class="section-label" data-i18n="du-label">Design Upload</p>
+      <h1 data-i18n="du-h1">Upload Your <em>Design Files</em></h1>
+      <p data-i18n="du-desc">Sales reps — submit your customer's design files here. Include the order number so we can match everything up.</p>
+    </div>
+
+    <div class="store-contact-body">
+      <div class="store-contact-layout">
+
+        <div class="form-panel">
+          <h3 data-i18n="du-form-title">Submit Your Design</h3>
+          <p class="form-sub" data-i18n="du-form-sub">Fill out the fields below and attach the design images for your order.</p>
+
+          <form id="designUploadForm" method="POST" action="https://formsubmit.co/info@bgraphix.store" enctype="multipart/form-data" onsubmit="return validateDesignUpload()">
+            <input type="hidden" name="_subject" value="New Design Upload – BGraphix Store" />
+            <input type="hidden" name="_cc" value="cortesaxel777@gmail.com,romanr3556@gmail.com" />
+            <input type="hidden" name="_next" value="https://bgraphix.store" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <div class="form-group">
+              <label data-i18n="du-label-name">Full Name <span class="req">*</span></label>
+              <input type="text" placeholder="John Doe" id="duName" name="Full Name" />
+            </div>
+            <div class="form-group">
+              <label data-i18n="du-label-order">Order Number <span class="req">*</span></label>
+              <input type="text" placeholder="e.g. BG-10042" id="duOrder" name="Order Number" />
+            </div>
+            <div class="form-group">
+              <label data-i18n="du-label-phone">Phone Number <span class="req">*</span></label>
+              <input type="tel" placeholder="(000) 000-0000" id="duPhone" name="Phone" />
+            </div>
+            <div class="form-group">
+              <label data-i18n="du-label-files">Design Images <span class="req">*</span></label>
+              <div class="file-drop-zone" id="duDropZone" onclick="document.getElementById('duFiles').click()">
+                <div class="file-drop-icon">🖼️</div>
+                <p class="file-drop-text" data-i18n="du-drop-text">Click or drag & drop images here</p>
+                <p class="file-drop-hint" data-i18n="du-drop-hint">Accepted: JPG, PNG, GIF, WEBP (multiple allowed)</p>
+                <input type="file" id="duFiles" name="attachment" accept="image/*" multiple style="display:none" onchange="handleFileSelect(this)" />
+              </div>
+              <div id="duFileList" class="file-list" style="display:none"></div>
+            </div>
+            <button type="submit" class="submit-btn" id="duSubmitBtn">
+              <span data-i18n="du-btn">Submit Design ✉</span>
+            </button>
+          </form>
         </div>
 
-        <div class="store-info-card">
-          <div class="store-info-icon">📧</div>
-          <div class="store-info-text">
-            <h4 data-i18n="info-email-title">Store Email</h4>
-            <p><a href="mailto:info@bgraphix.store">info@bgraphix.store</a><br>
-            <span style="font-size:0.8rem;color:var(--muted);" data-i18n="info-email-sub">Replies within 1–2 business days</span></p>
+        <div class="store-info-panel">
+          <div class="store-info-card">
+            <div class="store-info-icon">📋</div>
+            <div class="store-info-text">
+              <h4 data-i18n="du-info1-title">What to Include</h4>
+              <p data-i18n="du-info1-text">Your full name, the order number from the sale, and all design images at the highest resolution available.</p>
+            </div>
           </div>
-        </div>
-
-<div class="store-info-card">
-          <div class="store-info-icon">🚚</div>
-          <div class="store-info-text">
-            <h4 data-i18n="info-shipping-title">Shipping</h4>
-            <p data-i18n="info-shipping-text">Ships once your order is complete. Standard shipping 5–7 business days.</p>
+          <div class="store-info-card">
+            <div class="store-info-icon">🖼️</div>
+            <div class="store-info-text">
+              <h4 data-i18n="du-info2-title">File Formats</h4>
+              <p data-i18n="du-info2-text">JPG, PNG, GIF, and WEBP are accepted. Upload multiple images in one submission.</p>
+            </div>
           </div>
         </div>
 
       </div>
     </div>
 
+    <footer>
+      <div class="logo">BGraphix</div>
+      <p class="footer-copy" data-i18n="footer-copy">© 2025 BGraphix. All rights reserved.</p>
+    </footer>
   </div>
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
 
-  <footer>
-    <div class="logo">BGraphix</div>
-    <p style="margin-top:0.5rem;" data-i18n="footer-copy">© 2025 BGraphix. All rights reserved.</p>
-  </footer>
-</div>
-
-<div class="page" id="download-removed">
-
-  <div class="download-hero">
-    <div class="download-hero-inner">
-      <div class="app-phone-hero">
-        <div class="app-phone-screen">
-          <span class="app-logo-icon"></span>
-          <div class="app-name">BGraphix</div>
-          <div class="app-tagline">Your Church, Always Near</div>
-          <div class="mini-icons">
-            <div class="mini-icon">🎵</div>
-            <div class="mini-icon">📖</div>
-            <div class="mini-icon">🙏</div>
-            <div class="mini-icon">📅</div>
-            <div class="mini-icon">💬</div>
-            <div class="mini-icon">🛒</div>
-          </div>
-        </div>
-      </div>
-
-      <p class="section-label">Mobile App</p>
-      <h1>Your Church is <em>Always</em><br>in Your Pocket</h1>
-      <p class="hero-subtitle">Available on iOS & Android — Free to Download</p>
-      <p class="hero-desc">
-        Stream sermons, submit prayer requests, browse the store, join life groups, and stay connected with your church community — all from one beautiful app.
-      </p>
-
-      <div class="download-btns-large">
-        <a href="#" class="dl-btn" onclick="appDownload('App Store')">
-          <div class="dl-btn-icon">🍎</div>
-          <div class="dl-btn-text">
-            <small>Download on the</small>
-            <strong>App Store</strong>
-          </div>
-        </a>
-        <a href="#" class="dl-btn" onclick="appDownload('Google Play')">
-          <div class="dl-btn-icon">▶️</div>
-          <div class="dl-btn-text">
-            <small>Get it on</small>
-            <strong>Google Play</strong>
-          </div>
-        </a>
-      </div>
-      <p class="download-qr-hint">✦ Scan the QR code at the welcome desk to download instantly</p>
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+      <button class="lb-nav lb-prev" id="lbPrev" onclick="lbNavigate(-1)">&#8249;</button>
+      <img id="lbImg" src="" alt="" />
+      <button class="lb-nav lb-next" id="lbNext" onclick="lbNavigate(1)">&#8250;</button>
+      <div id="lbCaption" class="lightbox-caption"></div>
+      <div id="lbCounter" class="lightbox-counter"></div>
     </div>
   </div>
 
-  <!-- App Features -->
-  <div class="download-body">
-    <p class="section-label" style="text-align:center;">Everything in One Place</p>
-    <h2 class="section-title" style="text-align:center;margin-bottom:3rem;">What's Inside the App</h2>
+  <script>
+    // ── LANGUAGE ──
+    let currentLang = 'es';
+    let currentFilter = 'all';
 
-    <div class="app-features-grid">
-      <div class="app-feature-card">
-        <div class="feature-icon-box">🎙️</div>
-        <div class="feature-text">
-          <h4>Sermons On Demand</h4>
-          <p>Watch or listen to past and live sermons anytime. Never miss a message from our pastor.</p>
-        </div>
-      </div>
-      <div class="app-feature-card">
-        <div class="feature-icon-box">📅</div>
-        <div class="feature-text">
-          <h4>Events & Calendar</h4>
-          <p>Stay up to date with church events, life group meetings, and special services — all synced to your calendar.</p>
-        </div>
-      </div>
-      <div class="app-feature-card">
-        <div class="feature-icon-box">🙏</div>
-        <div class="feature-text">
-          <h4>Prayer Wall</h4>
-          <p>Submit and pray for requests from your church family. Connect in faith, even from a distance.</p>
-        </div>
-      </div>
-      <div class="app-feature-card">
-        <div class="feature-icon-box">💬</div>
-        <div class="feature-text">
-          <h4>Life Groups & Chat</h4>
-          <p>Join a life group, connect with members, and participate in group discussions directly from the app.</p>
-        </div>
-      </div>
-      <div class="app-feature-card">
-        <div class="feature-icon-box">🛒</div>
-        <div class="feature-text">
-          <h4>Shop the Store</h4>
-          <p>Browse and purchase books, music, apparel, and gifts from our church store — right from your phone.</p>
-        </div>
-      </div>
-      <div class="app-feature-card">
-        <div class="feature-icon-box">💰</div>
-        <div class="feature-text">
-          <h4>Online Giving</h4>
-          <p>Give your tithes and offerings securely anytime. Set up recurring giving in just a few taps.</p>
-        </div>
-      </div>
-      <div class="app-feature-card">
-        <div class="feature-icon-box">📖</div>
-        <div class="feature-text">
-          <h4>Daily Devotionals</h4>
-          <p>Start each morning with a curated devotional and scripture reading to anchor your day in faith.</p>
-        </div>
-      </div>
-      <div class="app-feature-card">
-        <div class="feature-icon-box">🔔</div>
-        <div class="feature-text">
-          <h4>Push Notifications</h4>
-          <p>Get notified about service changes, special announcements, and prayer requests as they happen.</p>
-        </div>
-      </div>
-      <div class="app-feature-card">
-        <div class="feature-icon-box">🌐</div>
-        <div class="feature-text">
-          <h4>Live Stream</h4>
-          <p>Can't make it in person? Watch our Sunday service live from anywhere in the world.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Screenshot Section -->
-  <div class="screenshots-section">
-    <p class="section-label">App Preview</p>
-    <h2 class="section-title">A Beautiful, Intuitive Experience</h2>
-    <p>Designed with your community in mind — clean, fast, and easy to navigate.</p>
-    <div class="screenshot-strip">
-
-      <div>
-        <div class="screenshot-mockup">
-          <div class="screenshot-content" style="margin-top:14px;">
-            <div class="screen-bar gold"></div>
-            <div class="screen-bar" style="width:80%;"></div>
-            <div style="margin-top:8px;">
-              <div class="screen-card-sm"><div class="icon-sm">🎙️</div><div class="bar-sm"></div><div class="bar-sm short"></div></div>
-              <div class="screen-card-sm"><div class="icon-sm">🎙️</div><div class="bar-sm"></div><div class="bar-sm short"></div></div>
-            </div>
-          </div>
-        </div>
-        <div class="screenshot-label">Sermons</div>
-      </div>
-
-      <div>
-        <div class="screenshot-mockup">
-          <div class="screenshot-content" style="margin-top:14px;">
-            <div class="screen-bar gold" style="width:50%;"></div>
-            <div class="screen-bar" style="width:70%;"></div>
-            <div style="margin-top:8px;display:grid;grid-template-columns:1fr 1fr;gap:4px;">
-              <div class="screen-card-sm"><div class="icon-sm">📅</div></div>
-              <div class="screen-card-sm"><div class="icon-sm">🙏</div></div>
-              <div class="screen-card-sm"><div class="icon-sm">💬</div></div>
-              <div class="screen-card-sm"><div class="icon-sm">🛒</div></div>
-            </div>
-          </div>
-        </div>
-        <div class="screenshot-label">Dashboard</div>
-      </div>
-
-      <div>
-        <div class="screenshot-mockup">
-          <div class="screenshot-content" style="margin-top:14px;">
-            <div class="screen-bar gold" style="width:45%;"></div>
-            <div style="margin-top:8px;">
-              <div class="screen-card-sm"><div class="icon-sm">🙏</div><div class="bar-sm"></div></div>
-              <div class="screen-card-sm"><div class="icon-sm">🙏</div><div class="bar-sm"></div></div>
-              <div class="screen-card-sm"><div class="icon-sm">🙏</div><div class="bar-sm"></div></div>
-            </div>
-          </div>
-        </div>
-        <div class="screenshot-label">Prayer Wall</div>
-      </div>
-
-      <div>
-        <div class="screenshot-mockup">
-          <div class="screenshot-content" style="margin-top:14px;">
-            <div class="screen-bar gold" style="width:55%;"></div>
-            <div style="margin-top:8px;">
-              <div class="screen-card-sm"><div class="icon-sm">📖</div><div class="bar-sm"></div><div class="bar-sm"></div></div>
-              <div class="screen-card-sm"><div class="icon-sm">📖</div><div class="bar-sm"></div><div class="bar-sm short"></div></div>
-            </div>
-          </div>
-        </div>
-        <div class="screenshot-label">Devotionals</div>
-      </div>
-
-      <div>
-        <div class="screenshot-mockup">
-          <div class="screenshot-content" style="margin-top:14px;">
-            <div class="screen-bar gold" style="width:40%;"></div>
-            <div style="margin-top:8px;">
-              <div class="screen-card-sm"><div class="icon-sm">👕</div><div class="bar-sm"></div></div>
-              <div class="screen-card-sm"><div class="icon-sm">📗</div><div class="bar-sm"></div></div>
-              <div class="screen-card-sm"><div class="icon-sm">🕯️</div><div class="bar-sm"></div></div>
-            </div>
-          </div>
-        </div>
-        <div class="screenshot-label">Store</div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Version Info -->
-  <div style="background:var(--white);padding:3.5rem 5%;">
-    <div style="max-width:800px;margin:0 auto;">
-      <p class="section-label" style="text-align:center;">App Details</p>
-      <div class="version-grid">
-        <div class="version-item">
-          <div class="v-num">2.4</div>
-          <div class="v-label">Current Version</div>
-        </div>
-        <div class="version-divider"></div>
-        <div class="version-item">
-          <div class="v-num">Free</div>
-          <div class="v-label">Download Price</div>
-        </div>
-        <div class="version-divider"></div>
-        <div class="version-item">
-          <div class="v-num">iOS 14+</div>
-          <div class="v-label">Minimum iOS</div>
-        </div>
-        <div class="version-divider"></div>
-        <div class="version-item">
-          <div class="v-num">Android 8+</div>
-          <div class="v-label">Minimum Android</div>
-        </div>
-      </div>
-      <p style="text-align:center;font-size:0.8rem;color:var(--muted);margin-top:2rem;">
-        Having trouble downloading? Contact us at <a href="mailto:support@bgraphix.com" style="color:var(--navy);font-weight:700;">support@bgraphix.com</a>
-      </p>
-    </div>
-  </div>
-
-  <footer>
-    <div class="logo">BGraphix</div>
-    <p style="margin-top:0.5rem;" data-i18n="footer-copy">© 2025 BGraphix. All rights reserved.</p>
-  </footer>
-</div>
-
-
-<!-- TOAST -->
-<div class="toast" id="toast"></div>
-
-<!-- LIGHTBOX -->
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-  <div class="lightbox-inner" onclick="event.stopPropagation()">
-    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
-    <button class="lb-nav lb-prev" id="lbPrev" onclick="lbNavigate(-1)">&#8249;</button>
-    <img id="lbImg" src="" alt="" />
-    <button class="lb-nav lb-next" id="lbNext" onclick="lbNavigate(1)">&#8250;</button>
-    <div id="lbCaption" class="lightbox-caption"></div>
-    <div id="lbCounter" class="lightbox-counter"></div>
-  </div>
-</div>
-
-<script>
-  // ── LANGUAGE ──
-  let currentLang = 'en';
-  let currentFilter = 'all';
-
-  const translations = {
-    en: {
-      'nav-home':'Home', 'nav-store':'Store', 'nav-contact':'Contact',
-      'hero-subtitle':'Our History &amp; Mission',
-      'hero-h1':'Paz De <em>Dios</em>',
-      'hero-desc':'<p>The Evangelical Christian Spiritual Church located at 207 Gilson Rd, Brownsville, Texas. With the purpose of raising funds for future construction projects such as a Pastoral House or improvements to the Temple, Kitchen, and Event Hall. Starting this project in 2018 to carry out screen printing work to supply the need for gifts for District Anniversary Delegates, Women\'s, Youth, and Children\'s Societies, Mother\'s Day, Father\'s Day, or any special event where the goal is to give a PERSONALIZED keepsake — where the quality of a good job is our priority, as well as the use of the best products on the market to fulfill your order. In advance, God bless you for your decision to order and be part of this project with the understanding that your cooperation is 100% for the work of God.</p><p style="margin-top:1rem;">We hope for your understanding on prices as we are a small workshop and do not have a large inventory. Products are obtained upon receiving your order.</p><p style="margin-top:1rem;color:var(--gold);font-weight:600;">God bless you.</p>',
-      'hero-cta':'Visit Our Store',
-      'feat-label':'What We Offer',
-      'feat-title':'Faith Resources &amp; Community',
-      'feat1-title':'Books &amp; Bibles', 'feat1-desc':'Curated selections to deepen your faith and grow in scripture.',
-      'feat2-title':'&amp; More',         'feat2-desc':'Personalized items, custom orders, and special keepsakes for every occasion.',
-      'feat3-title':'Apparel',            'feat3-desc':'Wear your faith with our church-branded clothing and accessories.',
-      'feat4-title':'Gifts &amp; Decor',  'feat4-desc':'Meaningful gifts for every occasion, rooted in faith and love.',
-      'footer-copy':'© 2025 BGraphix. All rights reserved.',
-      'store-label':'Our Store', 'store-h1':'We Specialize in <em>Personalizing</em> Your Keepsakes',
-      'store-desc':'Custom apparel, gifts, and more — crafted with quality and faith.',
-      'tab-all':'All Items', 'tab-apparel':'Apparel', 'tab-accessories':'Accessories', 'tab-gifts':'Gifts',
-      'contact-label':'Store Support', 'contact-h1':'Contact Our Store Team',
-      'contact-desc':'Questions about an order, product availability, or custom requests? We\'re here to help.',
-      'form-title':'Send Us a Message',
-      'form-sub':'Fill out the form below and our store team will get back to you within 1–2 business days.',
-      'label-first':'First Name <span class="req">*</span>',
-      'label-last':'Last Name <span class="req">*</span>',
-      'label-sector':'Sector <span class="req">*</span>',
-      'label-distrito':'Distrito <span class="req">*</span>',
-      'label-email':'Email Address <span class="req">*</span>',
-      'label-phone':'Phone Number <span class="req">*</span>',
-      'label-inquiry':'Inquiry Type <span class="req">*</span>',
-      'label-order':'Order Number (if applicable)',
-      'label-message':'Message <span class="req">*</span>',
-      'ph-first':'John', 'ph-last':'Doe', 'ph-sector':'e.g. 12', 'ph-distrito':'e.g. 5',
-      'ph-order':'e.g. BG-10042', 'ph-message':'Tell us how we can help you...',
-      'select-default':'Select a topic...', 'select-opt1':'Order Status / Tracking',
-      'select-opt2':'Return or Exchange',   'select-opt3':'Product Availability',
-      'select-opt4':'Custom / Bulk Order',  'select-opt5':'Wholesale Inquiry',
-      'select-opt6':'Website Issue',        'select-opt7':'Other',
-      'btn-send':'Send Message ✉',
-      'success-title':'Message Sent!',
-      'success-msg':'Thank you for reaching out. Our store team will reply to your email within 1–2 business days. We appreciate your patience and your support of our ministry.',
-      'info-location-title':'Store Location',
-      'info-location-text':'207 Gilson Rd<br>Brownsville, TX',
-      'info-email-title':'Store Email',     'info-email-sub':'Replies within 1–2 business days',
-      'info-shipping-title':'Shipping',
-      'info-shipping-text':'Ships once your order is complete. Standard shipping 5–7 business days.',
-      'order-title':'📬 Check Your Order Status',
-      'order-desc':'Enter your order number below to quickly look up your current order status, shipping info, and estimated delivery date.',
-      'order-placeholder':'Order # — e.g. BG-10042', 'order-btn':'Look Up',
-      'toast-required':'⚠️ Please fill in all required fields.',
-      'toast-email':'⚠️ Please enter a valid email address.',
-      'toast-numbers':'⚠️ Sector and Distrito must be numbers only.',
-      'toast-order-empty':'⚠️ Please enter an order number.',
-      'toast-lookup':'🔍 Looking up order',
-      'toast-lookup-suffix':'... (Integration placeholder)',
-      'cat-apparel':'Apparel','cat-accessories':'Accessories','cat-gifts':'Gifts',
-    },
-    es: {
-      'nav-home':'Inicio', 'nav-store':'Tienda', 'nav-contact':'Contacto',
-      'hero-subtitle':'Nuestra Historia y Misión',
-      'hero-h1':'Paz De <em>Dios</em>',
-      'hero-desc':'<p>La Iglesia Evangelica Cristiana Espiritual ubicada en 207 Gilson Rd Brownsville Texas. Con la finalidad de recaudar fondos para los proyectos futuros de construccion como sea Casa Pastoral o mejoras en el Templo, Cocina y Salon de Actos. Iniciando este proyecto desde el 2018 para realizar trabajos de Serigrafia para suplir la necesidad de los regalos para Delegados de Aniversário de Distrito, Sociedades Femeniles, Juveniles e Infantiles, Dia de las Madres, Dia del Padre o algun evento especial donde la finalidad es obsequiar un recuerdo PERSONALIZADO donde la calidad de un buen trabajo es nuestra prioridad, asi mismo el uso de los mejores productos en el mercado para suplir su orden. De antemano Dios les pague por su decision de odenar y ser parte de este proyecto con el entendimiento que su cooperacion es 100% para la obra de Dios.</p><p style="margin-top:1rem;">Esperamos de su comprension en los precios ya que somos un taller pequeño y no contamos con un gran inventario. Los productos se consiguen al recivir su orden.</p><p style="margin-top:1rem;color:var(--gold);font-weight:600;">Dios les pague.</p>',
-      'hero-cta':'Visitar Nuestra Tienda',
-      'feat-label':'Lo Que Ofrecemos',
-      'feat-title':'Recursos de Fe y Comunidad',
-      'feat1-title':'Libros y Biblias',     'feat1-desc':'Selecciones para profundizar tu fe y crecer en las escrituras.',
-      'feat2-title':'Y Más',               'feat2-desc':'Artículos personalizados, pedidos especiales y recuerdos para cada ocasión.',
-      'feat3-title':'Ropa',                 'feat3-desc':'Viste tu fe con nuestra ropa y accesorios de la iglesia.',
-      'feat4-title':'Regalos y Decoración', 'feat4-desc':'Regalos significativos para cada ocasión, arraigados en fe y amor.',
-      'footer-copy':'© 2025 BGraphix. Todos los derechos reservados.',
-      'store-label':'Nuestra Tienda', 'store-h1':'Nos Especializamos en <em>Personalizar</em> tus Recuerdos',
-      'store-desc':'Ropa, regalos y más — elaborados con calidad y fe.',
-      'tab-all':'Todo', 'tab-apparel':'Ropa', 'tab-accessories':'Accesorios', 'tab-gifts':'Regalos',
-      'contact-label':'Soporte de Tienda', 'contact-h1':'Contacta a Nuestro Equipo',
-      'contact-desc':'¿Preguntas sobre un pedido, disponibilidad de producto o solicitudes personalizadas? Estamos aquí para ayudarte.',
-      'form-title':'Envíanos un Mensaje',
-      'form-sub':'Completa el formulario y nuestro equipo te responderá en 1–2 días hábiles.',
-      'label-first':'Nombre <span class="req">*</span>',
-      'label-last':'Apellido <span class="req">*</span>',
-      'label-sector':'Sector <span class="req">*</span>',
-      'label-distrito':'Distrito <span class="req">*</span>',
-      'label-email':'Correo Electrónico <span class="req">*</span>',
-      'label-phone':'Número de Teléfono <span class="req">*</span>',
-      'label-inquiry':'Tipo de Consulta <span class="req">*</span>',
-      'label-order':'Número de Pedido (si aplica)',
-      'label-message':'Mensaje <span class="req">*</span>',
-      'ph-first':'Juan', 'ph-last':'Pérez', 'ph-sector':'ej. 12', 'ph-distrito':'ej. 5',
-      'ph-order':'ej. BG-10042', 'ph-message':'Dinos cómo podemos ayudarte...',
-      'select-default':'Selecciona un tema...', 'select-opt1':'Estado del Pedido / Rastreo',
-      'select-opt2':'Devolución o Cambio',      'select-opt3':'Disponibilidad de Producto',
-      'select-opt4':'Pedido Personalizado / a Granel', 'select-opt5':'Consulta al Por Mayor',
-      'select-opt6':'Problema con el Sitio Web',       'select-opt7':'Otro',
-      'btn-send':'Enviar Mensaje ✉',
-      'success-title':'¡Mensaje Enviado!',
-      'success-msg':'Gracias por comunicarte. Nuestro equipo responderá a tu correo en 1–2 días hábiles. Apreciamos tu paciencia y apoyo a nuestro ministerio.',
-      'info-location-title':'Ubicación de la Tienda',
-      'info-location-text':'207 Gilson Rd<br>Brownsville, TX',
-      'info-email-title':'Correo de la Tienda', 'info-email-sub':'Respuestas en 1–2 días hábiles',
-      'info-shipping-title':'Envío',
-      'info-shipping-text':'Se envía una vez que tu pedido esté completo. Envío estándar 5–7 días hábiles.',
-      'order-title':'📬 Consulta tu Estado de Pedido',
-      'order-desc':'Ingresa tu número de pedido para consultar el estado actual, información de envío y fecha estimada de entrega.',
-      'order-placeholder':'Pedido # — ej. BG-10042', 'order-btn':'Buscar',
-      'toast-required':'⚠️ Por favor completa todos los campos requeridos.',
-      'toast-email':'⚠️ Por favor ingresa un correo electrónico válido.',
-      'toast-numbers':'⚠️ Sector y Distrito deben ser solo números.',
-      'toast-order-empty':'⚠️ Por favor ingresa un número de pedido.',
-      'toast-lookup':'🔍 Buscando pedido',
-      'toast-lookup-suffix':'... (Integración pendiente)',
-      'cat-apparel':'Ropa','cat-accessories':'Accesorios','cat-gifts':'Regalos',
-    }
-  };
-
-  function setLanguage(lang) {
-    currentLang = lang;
-    document.documentElement.lang = lang;
-    const t = translations[lang];
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-      const key = el.dataset.i18n;
-      if (t[key] !== undefined) el.innerHTML = t[key];
-    });
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-      const key = el.dataset.i18nPlaceholder;
-      if (t[key] !== undefined) el.placeholder = t[key];
-    });
-    document.getElementById('btnEn').classList.toggle('active', lang === 'en');
-    document.getElementById('btnEs').classList.toggle('active', lang === 'es');
-    renderProducts(currentFilter);
-  }
-
-  // ── NAV ──
-  function showPage(id, el) {
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
-    if (el) el.classList.add('active');
-    document.getElementById('navLinks').classList.remove('open');
-    window.scrollTo(0, 0);
-  }
-  function toggleNav() {
-    document.getElementById('navLinks').classList.toggle('open');
-  }
-
-  // ── TOAST ──
-  function showToast(msg) {
-    const t = document.getElementById('toast');
-    t.textContent = msg; t.classList.add('show');
-    setTimeout(() => t.classList.remove('show'), 3000);
-  }
-
-  // ── CONTACT FORM ──
-  function submitStoreForm() {
-    const tr      = translations[currentLang];
-    const first   = document.getElementById('fcFirst').value.trim();
-    const last    = document.getElementById('fcLast').value.trim();
-    const sector  = document.getElementById('fcSector').value.trim();
-    const distrito= document.getElementById('fcDistrito').value.trim();
-    const email   = document.getElementById('fcEmail').value.trim();
-    const phone   = document.getElementById('fcPhone').value.trim();
-    const type    = document.getElementById('fcType').value;
-    const order   = document.getElementById('fcOrder').value.trim();
-    const msg     = document.getElementById('fcMessage').value.trim();
-
-    if (!first || !last || !sector || !distrito || !email || !phone || !type || !msg) {
-      showToast(tr['toast-required']); return;
-    }
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      showToast(tr['toast-email']); return;
-    }
-    if (!/^\d+$/.test(sector) || !/^\d+$/.test(distrito)) {
-      showToast(tr['toast-numbers']); return;
-    }
-
-    const btn = document.querySelector('.submit-btn');
-    btn.disabled = true;
-    btn.textContent = 'Sending...';
-
-    fetch('https://formsubmit.co/ajax/info@bgraphix.store', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify({
-        _subject:    'New Contact Form – BGraphix Store',
-        _cc:         'cortesaxel777@gmail.com,romanr3556@gmail.com',
-        'First Name':  first,
-        'Last Name':   last,
-        'Sector':      sector,
-        'Distrito':    distrito,
-        'Email':       email,
-        'Phone':       phone,
-        'Inquiry Type':type,
-        'Order Number':order || 'N/A',
-        'Message':     msg
-      })
-    })
-    .then(res => res.json())
-    .then(data => {
-      if (data.success) {
-        document.getElementById('storeContactForm').style.display = 'none';
-        document.getElementById('storeFormSuccess').style.display = 'block';
-      } else {
-        showToast('⚠️ Something went wrong. Please try again.');
-        btn.disabled = false;
-        btn.textContent = 'Send Message ✉';
+    const translations = {
+      en: {
+        'nav-home': 'Home', 'nav-store': 'Store', 'nav-contact': 'Contact',
+        'hero-subtitle': 'Our History &amp; Mission',
+        'hero-h1': 'Paz De <em>Dios</em>',
+        'hero-desc': '<p>The Evangelical Christian Spiritual Church located at 207 Gilson Rd, Brownsville, Texas. With the purpose of raising funds for future construction projects such as a Pastoral House or improvements to the Temple, Kitchen, and Event Hall. Starting this project in 2018 to carry out screen printing work to supply the need for gifts for District Anniversary Delegates, Women\'s, Youth, and Children\'s Societies, Mother\'s Day, Father\'s Day, or any special event where the goal is to give a PERSONALIZED keepsake — where the quality of a good job is our priority, as well as the use of the best products on the market to fulfill your order. In advance, God bless you for your decision to order and be part of this project with the understanding that your cooperation is 100% for the work of God.</p><p style="margin-top:1rem;">We hope for your understanding on prices as we are a small workshop and do not have a large inventory. Products are obtained upon receiving your order.</p><p style="margin-top:1rem;color:var(--gold);font-weight:600;">God bless you.</p>',
+        'hero-cta': 'Visit Our Store',
+        'feat-label': 'What We Offer',
+        'feat-title': 'Faith Resources &amp; Community',
+        'feat1-title': 'Books &amp; Bibles', 'feat1-desc': 'Curated selections to deepen your faith and grow in scripture.',
+        'feat2-title': '&amp; More', 'feat2-desc': 'Personalized items, custom orders, and special keepsakes for every occasion.',
+        'feat3-title': 'Apparel', 'feat3-desc': 'Wear your faith with our church-branded clothing and accessories.',
+        'feat4-title': 'Gifts &amp; Decor', 'feat4-desc': 'Meaningful gifts for every occasion, rooted in faith and love.',
+        'footer-copy': '© 2025 BGraphix. All rights reserved.',
+        'store-label': 'Our Store', 'store-h1': 'We Specialize in <em>Personalizing</em> Your Keepsakes',
+        'store-desc': 'Custom apparel, gifts, and more — crafted with quality and faith.',
+        'tab-all': 'All Items', 'tab-apparel': 'Apparel', 'tab-accessories': 'Accessories', 'tab-gifts': 'Gifts',
+        'contact-label': 'Store Support', 'contact-h1': 'Contact Our Store Team',
+        'contact-desc': 'Questions about an order, product availability, or custom requests? We\'re here to help.',
+        'form-title': 'Send Us a Message',
+        'form-sub': 'Fill out the form below and our store team will get back to you within 1–2 business days.',
+        'label-first': 'First Name <span class="req">*</span>',
+        'label-last': 'Last Name <span class="req">*</span>',
+        'label-sector': 'Sector <span class="req">*</span>',
+        'label-distrito': 'Distrito <span class="req">*</span>',
+        'label-email': 'Email Address <span class="req">*</span>',
+        'label-phone': 'Phone Number <span class="req">*</span>',
+        'label-inquiry': 'Inquiry Type <span class="req">*</span>',
+        'label-order': 'Order Number (if applicable)',
+        'label-message': 'Message <span class="req">*</span>',
+        'ph-first': 'John', 'ph-last': 'Doe', 'ph-sector': 'e.g. 12', 'ph-distrito': 'e.g. 5',
+        'ph-order': 'e.g. BG-10042', 'ph-message': 'Tell us how we can help you...',
+        'select-default': 'Select a topic...', 'select-opt1': 'Order Status / Tracking',
+        'select-opt2': 'Return or Exchange', 'select-opt3': 'Product Availability',
+        'select-opt4': 'Custom / Bulk Order', 'select-opt5': 'Wholesale Inquiry',
+        'select-opt6': 'Website Issue', 'select-opt7': 'Other',
+        'btn-send': 'Send Message ✉',
+        'success-title': 'Message Sent!',
+        'success-msg': 'Thank you for reaching out. Our store team will reply to your email within 1–2 business days. We appreciate your patience and your support of our ministry.',
+        'info-location-title': 'Store Location',
+        'info-location-text': '207 Gilson Rd<br>Brownsville, TX',
+        'info-email-title': 'Store Email', 'info-email-sub': 'Replies within 1–2 business days',
+        'info-shipping-title': 'Shipping',
+        'info-shipping-text': 'Ships once your order is complete. Standard shipping 5–7 business days.',
+        'order-title': '📬 Check Your Order Status',
+        'order-desc': 'Enter your order number below to quickly look up your current order status, shipping info, and estimated delivery date.',
+        'order-placeholder': 'Order # — e.g. BG-10042', 'order-btn': 'Look Up',
+        'toast-required': '⚠️ Please fill in all required fields.',
+        'toast-email': '⚠️ Please enter a valid email address.',
+        'toast-numbers': '⚠️ Sector and Distrito must be numbers only.',
+        'toast-order-empty': '⚠️ Please enter an order number.',
+        'toast-lookup': '🔍 Looking up order',
+        'toast-lookup-suffix': '... (Integration placeholder)',
+        'cat-apparel': 'Apparel', 'cat-accessories': 'Accessories', 'cat-gifts': 'Gifts',
+        'nav-design-upload': 'Design Upload',
+        'du-label': 'Design Upload',
+        'du-h1': 'Upload Your <em>Design Files</em>',
+        'du-desc': 'Sales reps — submit your customer\'s design files here. Include the order number so we can match everything up.',
+        'du-form-title': 'Submit Your Design',
+        'du-form-sub': 'Fill out the fields below and attach the design images for your order.',
+        'du-label-name': 'Full Name <span class="req">*</span>',
+        'du-label-order': 'Order Number <span class="req">*</span>',
+        'du-label-phone': 'Phone Number <span class="req">*</span>',
+        'du-label-files': 'Design Images <span class="req">*</span>',
+        'du-drop-text': 'Click or drag & drop images here',
+        'du-drop-hint': 'Accepted: JPG, PNG, GIF, WEBP (multiple allowed)',
+        'du-btn': 'Submit Design ✉',
+        'du-success-title': 'Design Submitted!',
+        'du-success-msg': 'Thank you! Your design files have been sent to our team. We\'ll review them and get your order started shortly.',
+        'du-info1-title': 'What to Include',
+        'du-info1-text': 'Your full name, the order number from the sale, and all design images at the highest resolution available.',
+        'du-info2-title': 'File Formats',
+        'du-info2-text': 'JPG, PNG, GIF, and WEBP are accepted. Upload multiple images in one submission.',
+        'du-info3-title': 'Processing Time',
+        'du-info3-text': 'Our team will review your design and begin processing your order within 1–2 business days.',
+        'du-toast-required': '⚠️ Please fill in all required fields.',
+        'du-toast-files': '⚠️ Please attach at least one design image.',
+      },
+      es: {
+        'nav-home': 'Inicio', 'nav-store': 'Tienda', 'nav-contact': 'Contacto',
+        'hero-subtitle': 'Nuestra Historia y Misión',
+        'hero-h1': 'Paz De <em>Dios</em>',
+        'hero-desc': '<p>La Iglesia Evangelica Cristiana Espiritual ubicada en 207 Gilson Rd Brownsville Texas. Con la finalidad de recaudar fondos para los proyectos futuros de construccion como sea Casa Pastoral o mejoras en el Templo, Cocina y Salon de Actos. Iniciando este proyecto desde el 2018 para realizar trabajos de Serigrafia para suplir la necesidad de los regalos para Delegados de Aniversário de Distrito, Sociedades Femeniles, Juveniles e Infantiles, Dia de las Madres, Dia del Padre o algun evento especial donde la finalidad es obsequiar un recuerdo PERSONALIZADO donde la calidad de un buen trabajo es nuestra prioridad, asi mismo el uso de los mejores productos en el mercado para suplir su orden. De antemano Dios les pague por su decision de odenar y ser parte de este proyecto con el entendimiento que su cooperacion es 100% para la obra de Dios.</p><p style="margin-top:1rem;">Esperamos de su comprension en los precios ya que somos un taller pequeño y no contamos con un gran inventario. Los productos se consiguen al recivir su orden.</p><p style="margin-top:1rem;color:var(--gold);font-weight:600;">Dios les pague.</p>',
+        'hero-cta': 'Visitar Nuestra Tienda',
+        'feat-label': 'Lo Que Ofrecemos',
+        'feat-title': 'Recursos de Fe y Comunidad',
+        'feat1-title': 'Libros y Biblias', 'feat1-desc': 'Selecciones para profundizar tu fe y crecer en las escrituras.',
+        'feat2-title': 'Y Más', 'feat2-desc': 'Artículos personalizados, pedidos especiales y recuerdos para cada ocasión.',
+        'feat3-title': 'Ropa', 'feat3-desc': 'Viste tu fe con nuestra ropa y accesorios de la iglesia.',
+        'feat4-title': 'Regalos y Decoración', 'feat4-desc': 'Regalos significativos para cada ocasión, arraigados en fe y amor.',
+        'footer-copy': '© 2025 BGraphix. Todos los derechos reservados.',
+        'store-label': 'Nuestra Tienda', 'store-h1': 'Nos Especializamos en <em>Personalizar</em> tus Recuerdos',
+        'store-desc': 'Ropa, regalos y más — elaborados con calidad y fe.',
+        'tab-all': 'Todo', 'tab-apparel': 'Ropa', 'tab-accessories': 'Accesorios', 'tab-gifts': 'Regalos',
+        'contact-label': 'Soporte de Tienda', 'contact-h1': 'Contacta a Nuestro Equipo',
+        'contact-desc': '¿Preguntas sobre un pedido, disponibilidad de producto o solicitudes personalizadas? Estamos aquí para ayudarte.',
+        'form-title': 'Envíanos un Mensaje',
+        'form-sub': 'Completa el formulario y nuestro equipo te responderá en 1–2 días hábiles.',
+        'label-first': 'Nombre <span class="req">*</span>',
+        'label-last': 'Apellido <span class="req">*</span>',
+        'label-sector': 'Sector <span class="req">*</span>',
+        'label-distrito': 'Distrito <span class="req">*</span>',
+        'label-email': 'Correo Electrónico <span class="req">*</span>',
+        'label-phone': 'Número de Teléfono <span class="req">*</span>',
+        'label-inquiry': 'Tipo de Consulta <span class="req">*</span>',
+        'label-order': 'Número de Pedido (si aplica)',
+        'label-message': 'Mensaje <span class="req">*</span>',
+        'ph-first': 'Juan', 'ph-last': 'Pérez', 'ph-sector': 'ej. 12', 'ph-distrito': 'ej. 5',
+        'ph-order': 'ej. BG-10042', 'ph-message': 'Dinos cómo podemos ayudarte...',
+        'select-default': 'Selecciona un tema...', 'select-opt1': 'Estado del Pedido / Rastreo',
+        'select-opt2': 'Devolución o Cambio', 'select-opt3': 'Disponibilidad de Producto',
+        'select-opt4': 'Pedido Personalizado / a Granel', 'select-opt5': 'Consulta al Por Mayor',
+        'select-opt6': 'Problema con el Sitio Web', 'select-opt7': 'Otro',
+        'btn-send': 'Enviar Mensaje ✉',
+        'success-title': '¡Mensaje Enviado!',
+        'success-msg': 'Gracias por comunicarte. Nuestro equipo responderá a tu correo en 1–2 días hábiles. Apreciamos tu paciencia y apoyo a nuestro ministerio.',
+        'info-location-title': 'Ubicación de la Tienda',
+        'info-location-text': '207 Gilson Rd<br>Brownsville, TX',
+        'info-email-title': 'Correo de la Tienda', 'info-email-sub': 'Respuestas en 1–2 días hábiles',
+        'info-shipping-title': 'Envío',
+        'info-shipping-text': 'Se envía una vez que tu pedido esté completo. Envío estándar 5–7 días hábiles.',
+        'order-title': '📬 Consulta tu Estado de Pedido',
+        'order-desc': 'Ingresa tu número de pedido para consultar el estado actual, información de envío y fecha estimada de entrega.',
+        'order-placeholder': 'Pedido # — ej. BG-10042', 'order-btn': 'Buscar',
+        'toast-required': '⚠️ Por favor completa todos los campos requeridos.',
+        'toast-email': '⚠️ Por favor ingresa un correo electrónico válido.',
+        'toast-numbers': '⚠️ Sector y Distrito deben ser solo números.',
+        'toast-order-empty': '⚠️ Por favor ingresa un número de pedido.',
+        'toast-lookup': '🔍 Buscando pedido',
+        'toast-lookup-suffix': '... (Integración pendiente)',
+        'cat-apparel': 'Ropa', 'cat-accessories': 'Accesorios', 'cat-gifts': 'Regalos',
+        'nav-design-upload': 'Subir Diseño',
+        'du-label': 'Subir Diseño',
+        'du-h1': 'Sube tus <em>Archivos de Diseño</em>',
+        'du-desc': 'Vendedores — envíen los archivos de diseño de sus clientes aquí. Incluyan el número de pedido para que podamos asociar todo.',
+        'du-form-title': 'Envía Tu Diseño',
+        'du-form-sub': 'Completa los campos y adjunta las imágenes de diseño para tu pedido.',
+        'du-label-name': 'Nombre Completo <span class="req">*</span>',
+        'du-label-order': 'Número de Pedido <span class="req">*</span>',
+        'du-label-phone': 'Número de Teléfono <span class="req">*</span>',
+        'du-label-files': 'Imágenes de Diseño <span class="req">*</span>',
+        'du-drop-text': 'Haz clic o arrastra y suelta imágenes aquí',
+        'du-drop-hint': 'Aceptados: JPG, PNG, GIF, WEBP (se permiten varios)',
+        'du-btn': 'Enviar Diseño ✉',
+        'du-success-title': '¡Diseño Enviado!',
+        'du-success-msg': '¡Gracias! Tus archivos de diseño han sido enviados a nuestro equipo. Los revisaremos y comenzaremos a procesar tu pedido en breve.',
+        'du-info1-title': 'Qué Incluir',
+        'du-info1-text': 'Tu nombre completo, el número de pedido de la venta y todas las imágenes de diseño con la mayor resolución disponible.',
+        'du-info2-title': 'Formatos de Archivo',
+        'du-info2-text': 'Se aceptan JPG, PNG, GIF y WEBP. Puedes subir varias imágenes en un solo envío.',
+        'du-info3-title': 'Tiempo de Procesamiento',
+        'du-info3-text': 'Nuestro equipo revisará tu diseño y comenzará a procesar tu pedido en 1–2 días hábiles.',
+        'du-toast-required': '⚠️ Por favor completa todos los campos requeridos.',
+        'du-toast-files': '⚠️ Por favor adjunta al menos una imagen de diseño.',
       }
-    })
-    .catch(() => {
-      showToast('⚠️ Could not send. Please email us directly at info@bgraphix.store');
-      btn.disabled = false;
-      btn.textContent = 'Send Message ✉';
+    };
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang;
+      const t = translations[lang];
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        if (t[key] !== undefined) el.innerHTML = t[key];
+      });
+      document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.dataset.i18nPlaceholder;
+        if (t[key] !== undefined) el.placeholder = t[key];
+      });
+      document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+      document.getElementById('btnEs').classList.toggle('active', lang === 'es');
+      renderProducts(currentFilter);
+    }
+
+    // ── NAV ──
+    function showPage(id, el) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      if (el) el.classList.add('active');
+      document.getElementById('navLinks').classList.remove('open');
+      window.scrollTo(0, 0);
+    }
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+
+    // ── TOAST ──
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = msg; t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 3000);
+    }
+
+    // ── CONTACT FORM ──
+    function submitStoreForm() {
+      const tr = translations[currentLang];
+      const first = document.getElementById('fcFirst').value.trim();
+      const last = document.getElementById('fcLast').value.trim();
+      const sector = document.getElementById('fcSector').value.trim();
+      const distrito = document.getElementById('fcDistrito').value.trim();
+      const email = document.getElementById('fcEmail').value.trim();
+      const phone = document.getElementById('fcPhone').value.trim();
+      const type = document.getElementById('fcType').value;
+      const order = document.getElementById('fcOrder').value.trim();
+      const msg = document.getElementById('fcMessage').value.trim();
+
+      if (!first || !last || !sector || !distrito || !email || !phone || !type || !msg) {
+        showToast(tr['toast-required']); return;
+      }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        showToast(tr['toast-email']); return;
+      }
+      if (!/^\d+$/.test(sector) || !/^\d+$/.test(distrito)) {
+        showToast(tr['toast-numbers']); return;
+      }
+
+      const btn = document.querySelector('.submit-btn');
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+
+      fetch('https://formsubmit.co/ajax/info@bgraphix.store', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({
+          _subject: 'New Contact Form – BGraphix Store',
+          _cc: 'cortesaxel777@gmail.com,romanr3556@gmail.com',
+          'First Name': first,
+          'Last Name': last,
+          'Sector': sector,
+          'Distrito': distrito,
+          'Email': email,
+          'Phone': phone,
+          'Inquiry Type': type,
+          'Order Number': order || 'N/A',
+          'Message': msg
+        })
+      })
+        .then(res => res.json())
+        .then(data => {
+          if (data.success) {
+            document.getElementById('storeContactForm').style.display = 'none';
+            document.getElementById('storeFormSuccess').style.display = 'block';
+          } else {
+            showToast('⚠️ Something went wrong. Please try again.');
+            btn.disabled = false;
+            btn.textContent = 'Send Message ✉';
+          }
+        })
+        .catch(() => {
+          showToast('⚠️ Could not send. Please email us directly at info@bgraphix.store');
+          btn.disabled = false;
+          btn.textContent = 'Send Message ✉';
+        });
+    }
+
+    // ── SCROLL ANIMATIONS ──
+    const cardObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); cardObserver.unobserve(e.target); } });
+    }, { threshold: 0.08 });
+
+    // ── DESIGN UPLOAD FORM ──
+    document.addEventListener('DOMContentLoaded', function () {
+      // Observe static reveal elements
+      document.querySelectorAll('.feat-card, .store-info-card').forEach(el => {
+        el.classList.add('reveal');
+        cardObserver.observe(el);
+      });
+
+      // Drag-and-drop wiring for the design upload zone
+      const zone = document.getElementById('duDropZone');
+      if (!zone) return;
+      zone.addEventListener('dragover', e => { e.preventDefault(); zone.style.background = 'rgba(201,168,76,0.15)'; });
+      zone.addEventListener('dragleave', () => { zone.style.background = ''; });
+      zone.addEventListener('drop', e => {
+        e.preventDefault(); zone.style.background = '';
+        const input = document.getElementById('duFiles');
+        const dt = new DataTransfer();
+        Array.from(e.dataTransfer.files).filter(f => f.type.startsWith('image/')).forEach(f => dt.items.add(f));
+        input.files = dt.files;
+        handleFileSelect(input);
+      });
     });
-  }
 
-  // ── ORDER LOOKUP ──
-  function lookupOrder() {
-    const tr  = translations[currentLang];
-    const val = document.getElementById('orderLookupInput').value.trim();
-    if (!val) { showToast(tr['toast-order-empty']); return; }
-    showToast(tr['toast-lookup'] + ' ' + val + tr['toast-lookup-suffix']);
-  }
+    function handleFileSelect(input) {
+      const files = input.files;
+      const listEl = document.getElementById('duFileList');
+      if (!files.length) { listEl.style.display = 'none'; listEl.innerHTML = ''; return; }
+      listEl.style.display = 'block';
+      listEl.innerHTML = Array.from(files).map(f =>
+        `<div class="file-list-item">🖼️ ${f.name} <span class="file-size">(${(f.size / 1024).toFixed(0)} KB)</span></div>`
+      ).join('');
+    }
 
-  // ── PRODUCTS ──
-  const products = [
-    { id:1,  cat:'apparel',     imgs:['store items/shirts.PNG'],
-      name:{en:'Shirts',    es:'Camisas'},
-      desc:{en:'Your personalized shirts, representing your faith in style.', es:'Tus camisas personalizadas, representa tu fe con estilo.'} },
-    { id:2,  cat:'apparel',     imgs:['store items/caps.PNG'],
-      name:{en:'Caps',      es:'Gorras'},
-      desc:{en:'Your personalized caps, styled just the way you want.', es:'Tus gorras personalizadas, con el estilo que deseas.'} },
-    { id:3,  cat:'accessories', imgs:['store items/bags.PNG','store items/bags 2.png'],
-      name:{en:'Bags',      es:'Bolsos'},
-      desc:{en:'Your personalized bags, perfect for church, school, or everyday use.', es:'Tus bolsos personalizados, perfectos para la iglesia, escuela o uso diario.'} },
-    { id:4,  cat:'accessories', imgs:['store items/keychains.PNG'],
-      name:{en:'Keychains', es:'Llaveros'},
-      desc:{en:'Your personalized keychains — carry your faith with you.', es:'Tus llaveros personalizados — lleva tu fe contigo.'} },
-    { id:5,  cat:'accessories', imgs:['store items/nametags.PNG','store items/nametags 2.png'],
-      name:{en:'Nametags',  es:'Gafetes'},
-      desc:{en:'Custom nametags for members, volunteers, and events.', es:'Gafetes personalizados para miembros, voluntarios y eventos.'} },
-    { id:6,  cat:'gifts',       imgs:['store items/mugs.PNG'],
-      name:{en:'Mugs',      es:'Tazas'},
-      desc:{en:'Your personalized mug — start every morning your way.', es:'Tu taza personalizada — comienza cada mañana a tu manera.'} },
-    { id:7,  cat:'gifts',       imgs:['store items/bookmark.PNG'],
-      name:{en:'Bookmarks', es:'Separadores'},
-      desc:{en:'Faith-inspired bookmarks for your Bible or daily reading.', es:'Separadores de fe para tu Biblia o lectura diaria.'} },
-    { id:8,  cat:'gifts',       imgs:['store items/tumbler.png','store items/tumbler 2.png'],
-      name:{en:'Tumblers',  es:'Termos'},
-      desc:{en:'Custom tumblers to keep your drinks hot or cold.', es:'Termos personalizados para mantener tus bebidas frías o calientes.'} },
-    { id:9,  cat:'gifts',       imgs:['store items/apron.png'],
-      name:{en:'Aprons',    es:'Delantales'},
-      desc:{en:'Custom aprons for your kitchen or ministry events.', es:'Delantales personalizados para tu cocina o eventos del ministerio.'} },
-    { id:10, cat:'gifts',       imgs:['store items/clock.png'],
-      name:{en:'Clocks',    es:'Relojes'},
-      desc:{en:'Custom wall clocks for your home or church.', es:'Relojes de pared personalizados para tu hogar o iglesia.'} },
-    { id:11, cat:'accessories', imgs:['store items/placa.png'],
-      name:{en:'Plaques',   es:'Placas'},
-      desc:{en:'Custom plaques for recognition, awards, or church decor.', es:'Placas personalizadas para reconocimientos, premios o decoración.'} },
-  ];
+    function validateDesignUpload() {
+      const tr = translations[currentLang];
+      const name = document.getElementById('duName').value.trim();
+      const order = document.getElementById('duOrder').value.trim();
+      const phone = document.getElementById('duPhone').value.trim();
+      const files = document.getElementById('duFiles').files;
 
-  function catLabel(cat) {
-    return translations[currentLang]['cat-' + cat] || cat;
-  }
+      if (!name || !order || !phone) { showToast(tr['du-toast-required']); return false; }
+      if (!files.length) { showToast(tr['du-toast-files']); return false; }
 
-  function renderProducts(filter) {
-    currentFilter = filter;
-    const grid = document.getElementById('productsGrid');
-    const filtered = filter === 'all' ? products : products.filter(p => p.cat === filter);
-    grid.innerHTML = filtered.map(p => `
-      <div class="product-card" data-cat="${p.cat}">
+      const btn = document.getElementById('duSubmitBtn');
+      btn.disabled = true;
+      btn.querySelector('span').textContent = 'Sending...';
+      return true;
+    }
+
+    // ── ORDER LOOKUP ──
+    function lookupOrder() {
+      const tr = translations[currentLang];
+      const val = document.getElementById('orderLookupInput').value.trim();
+      if (!val) { showToast(tr['toast-order-empty']); return; }
+      showToast(tr['toast-lookup'] + ' ' + val + tr['toast-lookup-suffix']);
+    }
+
+    // ── PRODUCTS ──
+    const products = [
+      {
+        id: 1, cat: 'apparel', imgs: ['store items/shirts.PNG'],
+        name: { en: 'Shirts', es: 'Camisas' },
+        desc: { en: 'Your personalized shirts, representing your faith in style.', es: 'Tus camisas personalizadas, representa tu fe con estilo.' }
+      },
+      {
+        id: 2, cat: 'apparel', imgs: ['store items/caps.PNG'],
+        name: { en: 'Caps', es: 'Gorras' },
+        desc: { en: 'Your personalized caps, styled just the way you want.', es: 'Tus gorras personalizadas, con el estilo que deseas.' }
+      },
+      {
+        id: 3, cat: 'accessories', imgs: ['store items/bags.PNG', 'store items/bags 2.png'],
+        name: { en: 'Bags', es: 'Bolsos' },
+        desc: { en: 'Your personalized bags, perfect for church, school, or everyday use.', es: 'Tus bolsos personalizados, perfectos para la iglesia, escuela o uso diario.' }
+      },
+      {
+        id: 4, cat: 'accessories', imgs: ['store items/keychains.PNG'],
+        name: { en: 'Keychains', es: 'Llaveros' },
+        desc: { en: 'Your personalized keychains — carry your faith with you.', es: 'Tus llaveros personalizados — lleva tu fe contigo.' }
+      },
+      {
+        id: 5, cat: 'accessories', imgs: ['store items/nametags.PNG', 'store items/nametags 2.png'],
+        name: { en: 'Nametags', es: 'Gafetes' },
+        desc: { en: 'Custom nametags for members, volunteers, and events.', es: 'Gafetes personalizados para miembros, voluntarios y eventos.' }
+      },
+      {
+        id: 6, cat: 'gifts', imgs: ['store items/mugs.PNG'],
+        name: { en: 'Mugs', es: 'Tazas' },
+        desc: { en: 'Your personalized mug — start every morning your way.', es: 'Tu taza personalizada — comienza cada mañana a tu manera.' }
+      },
+      {
+        id: 7, cat: 'gifts', imgs: ['store items/bookmark.PNG'],
+        name: { en: 'Bookmarks', es: 'Separadores' },
+        desc: { en: 'Faith-inspired bookmarks for your Bible or daily reading.', es: 'Separadores de fe para tu Biblia o lectura diaria.' }
+      },
+      {
+        id: 8, cat: 'gifts', imgs: ['store items/tumbler.png', 'store items/tumbler 2.png'],
+        name: { en: 'Tumblers', es: 'Termos' },
+        desc: { en: 'Custom tumblers to keep your drinks hot or cold.', es: 'Termos personalizados para mantener tus bebidas frías o calientes.' }
+      },
+      {
+        id: 9, cat: 'gifts', imgs: ['store items/apron.png'],
+        name: { en: 'Aprons', es: 'Delantales' },
+        desc: { en: 'Custom aprons for your kitchen or ministry events.', es: 'Delantales personalizados para tu cocina o eventos del ministerio.' }
+      },
+      {
+        id: 10, cat: 'gifts', imgs: ['store items/clock.png'],
+        name: { en: 'Clocks', es: 'Relojes' },
+        desc: { en: 'Custom wall clocks for your home or church.', es: 'Relojes de pared personalizados para tu hogar o iglesia.' }
+      },
+      {
+        id: 11, cat: 'accessories', imgs: ['store items/placa.png'],
+        name: { en: 'Plaques', es: 'Placas' },
+        desc: { en: 'Custom plaques for recognition, awards, or church decor.', es: 'Placas personalizadas para reconocimientos, premios o decoración.' }
+      },
+    ];
+
+    function catLabel(cat) {
+      return translations[currentLang]['cat-' + cat] || cat;
+    }
+
+    function renderProducts(filter) {
+      currentFilter = filter;
+      const grid = document.getElementById('productsGrid');
+      const filtered = filter === 'all' ? products : products.filter(p => p.cat === filter);
+      grid.innerHTML = filtered.map(p => `
+      <div class="product-card reveal" data-cat="${p.cat}">
         <div class="product-img" onclick="openLightboxById(${p.id}, 0)">
-          <img src="${p.imgs[0]}" alt="${p.name[currentLang]}" style="width:100%;height:100%;object-fit:cover;" />
+          <img src="${p.imgs[0]}" alt="${p.name[currentLang]}" loading="lazy" class="product-img-el" />
           ${p.imgs.length > 1 ? `<span class="img-count">${p.imgs.length} photos</span>` : ''}
         </div>
         <div class="product-info">
@@ -753,46 +740,48 @@
         </div>
       </div>
     `).join('');
-  }
+      grid.querySelectorAll('.product-card.reveal').forEach(el => cardObserver.observe(el));
+    }
 
-  function filterProducts(filter, btn) {
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    if (btn) btn.classList.add('active');
-    renderProducts(filter);
-  }
+    function filterProducts(filter, btn) {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+      renderProducts(filter);
+    }
 
-  // ── LIGHTBOX ──
-  let lbImages = [], lbIndex = 0, lbName = '';
+    // ── LIGHTBOX ──
+    let lbImages = [], lbIndex = 0, lbName = '';
 
-  function openLightboxById(productId, index) {
-    const p = products.find(x => x.id === productId);
-    lbImages = p.imgs;
-    lbIndex  = index;
-    lbName   = p.name[currentLang];
-    document.getElementById('lbCaption').textContent = lbName;
-    updateLightboxImage();
-    document.getElementById('lightbox').classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-  function updateLightboxImage() {
-    document.getElementById('lbImg').src = lbImages[lbIndex];
-    document.getElementById('lbImg').alt = lbName;
-    const multi = lbImages.length > 1;
-    document.getElementById('lbPrev').hidden = !multi;
-    document.getElementById('lbNext').hidden = !multi;
-    document.getElementById('lbCounter').textContent = multi ? (lbIndex + 1) + ' / ' + lbImages.length : '';
-  }
-  function lbNavigate(dir) {
-    lbIndex = (lbIndex + dir + lbImages.length) % lbImages.length;
-    updateLightboxImage();
-  }
-  function closeLightbox() {
-    document.getElementById('lightbox').classList.remove('open');
-    document.body.style.overflow = '';
-  }
+    function openLightboxById(productId, index) {
+      const p = products.find(x => x.id === productId);
+      lbImages = p.imgs;
+      lbIndex = index;
+      lbName = p.name[currentLang];
+      document.getElementById('lbCaption').textContent = lbName;
+      updateLightboxImage();
+      document.getElementById('lightbox').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function updateLightboxImage() {
+      document.getElementById('lbImg').src = lbImages[lbIndex];
+      document.getElementById('lbImg').alt = lbName;
+      const multi = lbImages.length > 1;
+      document.getElementById('lbPrev').hidden = !multi;
+      document.getElementById('lbNext').hidden = !multi;
+      document.getElementById('lbCounter').textContent = multi ? (lbIndex + 1) + ' / ' + lbImages.length : '';
+    }
+    function lbNavigate(dir) {
+      lbIndex = (lbIndex + dir + lbImages.length) % lbImages.length;
+      updateLightboxImage();
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
 
-  // Init
-  setLanguage('en');
-</script>
+    // Init
+    setLanguage('es');
+  </script>
 </body>
+
 </html>
